@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surhan Mehak Memon | Robotics, Machine Learning and Electronics</title>
+<meta name="description" content="Portfolio of projects in electronics, robotics and machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef3f0; --ink:#12263a; --muted:#51647a; --line:#c9d6d0; --card:#f8fbf9;
+  --elec:#c0541f; --robo:#1f6fb5; --ml:#2f8a5b; --mix:#7a4fb0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#0f1a24; --ink:#e6eef5; --muted:#98abbd; --line:#243545; --card:#142230;
+  --elec:#f08a55; --robo:#5aa6ea; --ml:#58c08a; --mix:#b794ea;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 "Source Serif 4",Georgia,serif;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:32px 32px;background-attachment:fixed}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+h1,h2,h3,nav{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--robo);outline-offset:3px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:20px 0;font-size:16px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+header.hero{padding:56px 0 48px}
+h1{font-size:clamp(44px,9vw,92px);line-height:.98;letter-spacing:-.03em;margin:0 0 20px;font-weight:800}
+.lead{font-size:clamp(20px,3vw,25px);max-width:34em;margin:0 0 28px}
+.tracks{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px;padding:0;list-style:none}
+.tracks li{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);padding:5px 14px;border-radius:99px;font:600 15px "Bricolage Grotesque",sans-serif}
+.dot{width:10px;height:10px;border-radius:50%}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font:700 16px "Bricolage Grotesque",sans-serif;padding:11px 20px;border-radius:6px;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--paper)}
+section{padding:48px 0}
+h2{font-size:clamp(30px,5vw,42px);letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.project{background:var(--card);border:1px solid var(--line);border-left:8px solid var(--c);padding:24px 26px;margin:0 0 24px;border-radius:4px}
+.project h3{font-size:25px;margin:0 0 4px}
+.field{font:600 15px "Bricolage Grotesque",sans-serif;color:var(--c);margin:0 0 12px}
+.shot{aspect-ratio:16/9;background:var(--paper);border:2px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:15px;margin:14px 0;text-align:center;padding:10px}
+.shot img{width:100%;height:100%;object-fit:cover}
+dl{margin:0}
+dt{font:700 16px "Bricolage Grotesque",sans-serif;margin-top:14px}
+dd{margin:2px 0 0}
+.links{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap;font:600 16px "Bricolage Grotesque",sans-serif}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.box{background:var(--card);border:1px solid var(--line);padding:18px 20px;border-radius:4px}
+.box h3{margin:0 0 8px;font-size:20px}
+.box ul{margin:0;padding-left:20px}
+footer{padding:40px 0 60px;color:var(--muted);font-size:15px}
+.note{background:var(--card);border:1px solid var(--line);padding:12px 16px;border-radius:4px;font-size:15px;color:var(--muted);margin:0 0 24px}
+
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);background:var(--paper);padding:2px 10px;border-radius:99px;font:500 14px "Bricolage Grotesque",sans-serif}
+.res{margin:6px 0 0;padding-left:20px}
+.project p{margin:0 0 8px}
+.item{margin:0 0 18px}.item h3{font-size:19px;margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><a href="#projects">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<header class="hero">
+<h1>Surhan Mehak Memon</h1>
+<p class="lead">Final-year Electronics Engineering student at MUET, building intelligent assistive and rehabilitation robots with machine learning.</p>
+<ul class="tracks" aria-label="Fields">
+<li><span class="dot" style="background:var(--elec)"></span>Electronics</li>
+<li><span class="dot" style="background:var(--robo)"></span>Robotics and control</li>
+<li><span class="dot" style="background:var(--ml)"></span>Machine learning</li>
+<li><span class="dot" style="background:var(--mix)"></span>Combined</li></ul>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="https://github.com/Surhan-Memon">GitHub</a></div>
+</header>
+<main>
+<section id="projects"><h2>Projects</h2>
+<p class="sub">The color on the left edge shows the field of each project.</p>
+<article class="project" style="--c:var(--mix)"><h3>ReGenExo: self-learning, energy-regenerative lower-limb exoskeleton</h3><p class="field">Robotics + machine learning + electronics + control</p><p>A low-cost lower-limb exoskeleton concept that adapts walking assistance to gait patterns and speed. It also explores recovering energy during negative-work phases of gait and storing it in a supercapacitor, aiming at more accessible walking-assistance and rehabilitation technology.</p><ul class="tags"><li>BLDC motor</li><li>6:50 gearbox</li><li>IMU</li><li>Knee-angle sensing</li><li>Heel/toe pressure sensors</li><li>Encoder/potentiometer</li><li>EMG</li><li>24 V battery</li><li>Supercapacitor</li><li>Python</li><li>MATLAB</li><li>Machine learning</li><li>3D modeling</li></ul><dl><dt>Problem and fix</dt><dd>The original concept was too expensive for our budget. Instead of abandoning it, I simplified it to a low-cost single-leg prototype that keeps the core ideas of adaptive assistance and energy regeneration. It taught me to balance research goals, feasibility, and real financial limits.</dd><dt>Results</dt><dd><ul class="res"><li>38.43 J of energy harvested</li><li>1.281 W average harvested power</li><li>8.2% final supercapacitor state of charge</li><li>Random Forest gait classification: 97.5% training accuracy, 77.8% cross-validation, 14.16 ms runtime</li></ul></dd></dl></article>
+<article class="project" style="--c:var(--ml)"><h3>Edge AI predictive maintenance for machine fault detection</h3><p class="field">Machine learning + Edge AI + electronics</p><p>An end-to-end Edge AI pipeline that classifies machine health from vibration signals into four conditions: normal, ball fault, inner race fault, and outer race fault. It explores how models can be optimized for real-time use on resource-constrained embedded devices.</p><ul class="tags"><li>Python</li><li>Google Colab</li><li>TensorFlow</li><li>TensorFlow Lite</li><li>Edge Impulse</li><li>1D CNN</li><li>MFCC</li><li>INT8 quantization</li></ul><dl><dt>What I did</dt><dd>Balanced and preprocessed a public bearing-fault dataset, added synthetic data by augmentation, extracted MFCC features, built a custom 1D CNN, quantized it to full INT8, imported it into Edge Impulse, and compared it with Edge Impulse's optimized baseline on accuracy, latency, RAM, and size.</dd><dt>Results</dt><dd><ul class="res"><li>3 ms inference latency</li><li>Custom model: 259 KB, 61.5% accuracy</li><li>Optimized baseline: 46 KB, 63.6% accuracy</li></ul></dd></dl></article>
+<article class="project" style="--c:var(--robo)"><h3>Digital active suspension control (quarter-car model)</h3><p class="field">Control systems + MATLAB/Simulink</p><p>Designed and simulated a digital active suspension system to improve ride comfort and stability.</p><ul class="tags"><li>MATLAB</li><li>Simulink</li><li>State-space modeling</li><li>Digital PID</li><li>Zero-order hold</li><li>Tustin transformation</li></ul><dl><dt>What I did</dt><dd>Built a fourth-order state-space model, discretized it with zero-order hold, designed a digital PID controller, applied the Tustin transformation, and analyzed step response, Bode, Nyquist, root locus, and pole-zero maps.</dd><dt>Results</dt><dd><ul class="res"><li>22.5% reduction in peak body displacement</li><li>2.68 s settling time</li><li>Zero overshoot and zero steady-state error</li><li>Stable closed-loop response</li></ul></dd></dl></article>
+<article class="project" style="--c:var(--ml)"><h3>Auto-MPG: hierarchical clustering and dendrogram analysis</h3><p class="field">Machine learning + data science</p><p>An unsupervised learning project that groups vehicles by their characteristics using agglomerative hierarchical clustering (K = 4), plus a full dendrogram to explore the cluster structure.</p><ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Seaborn</li><li>Matplotlib</li></ul><dl><dt>What I did</dt><dd>Cleaned the Auto MPG data (398 to 392 records), handled missing horsepower values, one-hot encoded to 101 columns, and scaled with MinMaxScaler. Made heatmaps, clustermaps, correlation maps, and MPG vs. weight plots. After normalization, the Euclidean distance between the most and least fuel-efficient cars was 2.1656.</dd><dt>Results</dt><dd><ul class="res"><li>Key learning: unsupervised learning can reveal patterns without labels, and dendrograms help explore possible clusters.</li></ul></dd></dl><div class="links"><a href="https://github.com/Surhan-Memon">GitHub</a></div></article>
+<article class="project" style="--c:var(--elec)"><h3>FPGA-based digital system on Nexys4 DDR</h3><p class="field">Digital electronics + VHDL</p><p>A multifunction digital system in VHDL structural design that performs arithmetic, logic, set/clear, shift, rotate, and relational operations.</p><ul class="tags"><li>VHDL</li><li>Nexys4 DDR</li><li>Multiplexing</li><li>Testbench simulation</li><li>Seven-segment displays</li></ul><dl><dt>What I did</dt><dd>Built modular components, integrated them through multiplexing, verified the design with testbench simulation, and ran it on the FPGA. Output uses 8 time-multiplexed seven-segment displays.</dd></dl></article>
+<article class="project" style="--c:var(--elec)"><h3>Automatic solar cleaning system</h3><p class="field">Electronics + embedded systems</p><p>An automatic system that removes dust from solar panels to help maintain their performance.</p><ul class="tags"><li>Arduino Uno</li><li>LDR</li><li>Relay</li><li>Water pump</li><li>Lithium battery</li><li>Potentiometer</li></ul><dl><dt>Problem and fix</dt><dd>The relay did not work at first. After troubleshooting the circuit, I found the lithium battery was the cause. Once the power issue was fixed, the relay and pump worked correctly.</dd><dt>Results</dt><dd><ul class="res"><li>Water flowed through the pipe for about 5 seconds when the relay activated, showing the automated cleaning action.</li></ul></dd></dl></article>
+<article class="project" style="--c:var(--elec)"><h3>Smart temperature monitoring system (AVR simulation)</h3><p class="field">Embedded systems + electronics</p><p>A software-based temperature monitoring and control system in Embedded C for AVR ATmega16/32, with threshold-based automatic fan control, LCD messages, buzzer alerts, and manual override. Simulated and tested in Proteus.</p><ul class="tags"><li>Embedded C</li><li>AVR ATmega16/32</li><li>Proteus</li></ul></article>
+<article class="project" style="--c:var(--elec)"><h3>Smart navigation system (smart blind stick)</h3><p class="field">Embedded systems + assistive technology. Arduino Innovation Hackathon 2026, organized by the Electronics Department, MUET</p><p>A smart stick that helps visually impaired people detect obstacles. An ultrasonic sensor detects objects in the path and alerts the user with a buzzer and LED indicators. Built as a team with Rafia Burdi Baloch and Muzaina Shahid.</p><ul class="tags"><li>Arduino Uno</li><li>Ultrasonic sensor</li><li>Buzzer</li><li>LED indicators</li></ul><dl><dt>What I gained</dt><dd>Hands-on experience in Arduino programming, sensor interfacing, hardware integration, debugging, rapid prototyping, and teamwork on a real accessibility problem.</dd></dl></article>
+</section>
+<section id="research"><h2>Research interests</h2>
+<p>My main interest is at the intersection of robotics and machine learning: intelligent systems that interact with and assist people. Through ReGenExo I became interested in how machine learning can understand gait patterns and adapt robotic assistance as movement changes. I want to explore rehabilitation robotics, wearable exoskeletons, gait-aware control, and human-robot interaction, with the long-term goal of affordable assistive technology.</p>
+<ul class="tags"><li>Robotics</li><li>Machine learning for robotics</li><li>Rehabilitation robotics</li><li>Assistive robotics</li><li>Lower-limb exoskeletons</li><li>Human-robot interaction</li><li>Gait analysis</li><li>Intelligent control</li><li>Adaptive control</li><li>Edge AI</li><li>Wearable robotics</li><li>Energy-regenerative robotics</li><li>Human-centered AI</li></ul></section>
+<section id="skills"><h2>Skills</h2><div class="cols"><div class="box"><h3>Programming</h3><ul><li>Python</li><li>MATLAB</li><li>Embedded C</li><li>VHDL</li></ul></div><div class="box"><h3>Machine learning</h3><ul><li>Pandas, NumPy</li><li>Matplotlib, Seaborn</li><li>Scikit-learn</li><li>TensorFlow, TensorFlow Lite</li><li>Edge Impulse</li><li>CNNs, clustering, classification</li><li>Feature extraction</li><li>INT8 quantization</li></ul></div><div class="box"><h3>Robotics and control</h3><ul><li>Gait analysis</li><li>Exoskeleton systems</li><li>Assistive robotics</li><li>PID and digital control</li><li>MATLAB/Simulink</li></ul></div><div class="box"><h3>Electronics</h3><ul><li>Arduino Uno</li><li>AVR ATmega16/32</li><li>FPGA (Nexys4 DDR)</li><li>Sensors and actuators</li><li>Relay control</li><li>Hardware troubleshooting</li></ul></div><div class="box"><h3>Tools</h3><ul><li>Proteus, Multisim</li><li>Git/GitHub</li><li>Google Colab</li><li>Blender, OpenSCAD, Cura</li></ul></div></div></section>
+<section id="experience"><h2>Experience and learning</h2>
+<div class="item"><h3>Smart navigation system, Arduino Innovation Hackathon 2026</h3><p>Team project: a smart blind stick for visually impaired users (see projects above).</p></div>
+<div class="item"><h3>National Transmission and Despatch Company (NTDC): internship, July to August 2026</h3><p>Internship at NTDC, Pakistan's national power transmission and dispatch company.</p></div>
+<div class="item"><h3>OGDCL / OGTI: telemetry and oil field internship, July 2025</h3><p>Industrial exposure at the Kunnar Plant and Oil Field, Tando Jam: control room operations, SCADA, DCS, PID systems, RTU communication, telemetry, 4-20 mA signals, RS232, RS485, electrical submersible pumps, and process monitoring.</p></div>
+<div class="item"><h3>National Telecommunication Corporation (NTC): internship, 2024</h3><p>Exposure to telecom systems and network infrastructure: NGN, DWDM, optical fiber communication, OTDR, ADSL, SNR, VLAN, OSPF, and network operations.</p></div>
+<div class="item"><h3>GitHub</h3><p>A technical portfolio covering machine learning, robotics, electronics, embedded systems, control systems, FPGA design, and data science.</p></div>
+<div class="item"><h3>Courses and certificates</h3><ul class="tags"><li>Data Science Essentials with Python</li><li>MATLAB (MathWorks)</li><li>Introduction to Networking (Cisco)</li><li>Applied Data Science with Python (Simplilearn)</li><li>Artificial Intelligence (FutureLearn)</li><li>AI Essentials (Google)</li><li>AI for Beginners (HP LIFE)</li><li>The Art of Prompting (Coursera)</li></ul></div></section>
+<section id="about"><h2>About me</h2>
+<p>I am a final-year B.E. Electronics Engineering student at Mehran University of Engineering &amp; Technology (MUET), studying from December 2022 to November 2026.</p>
+<p><strong>My goal.</strong> I want to combine robotics and machine learning to build intelligent systems that solve real problems, especially in human mobility, rehabilitation, and assistive robotics.</p>
+<p><strong>Why I am applying for a scholarship.</strong> I want to pursue advanced study and research in robotics and machine learning, but financial limits make international graduate education hard without funding. A scholarship would give me access to advanced research facilities, experienced mentors, and an international academic environment to strengthen my technical and research skills.</p>
+<p><strong>In 5 to 10 years.</strong> I want to be a robotics and machine learning researcher working on intelligent assistive and rehabilitation systems. I plan to pursue a PhD, contribute to human-centered robotics research, and share what I learn with future students and engineers.</p></section>
+<section id="contact"><h2>Contact</h2>
+<p>Surhan Mehak Memon<br>B.E. Electronics Engineering, Mehran University of Engineering &amp; Technology</p>
+<p><a href="https://github.com/Surhan-Memon">GitHub</a> &nbsp; <a href="https://www.linkedin.com/in/surhan-memon">LinkedIn</a></p></section>
+</main>
+<footer>&copy; Surhan Mehak Memon</footer>
+</div>
+</body>
+</html>
